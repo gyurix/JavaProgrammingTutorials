@@ -18,6 +18,9 @@
         <module>Lesson7</module>
         <module>Lesson8</module>
         <module>Lesson9</module>
+        <module>Lesson11</module>
+        <module>Lesson12</module>
+        <module>Lesson13</module>
     </modules>
     <build>
         <plugins>

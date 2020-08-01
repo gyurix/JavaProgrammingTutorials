@@ -7,7 +7,7 @@ import gyurix.javaprogrammingtutorials.lesson8.a.AParent;
 public class BChild implements FieldAccessTester {
   @Override
   public void accessFields() {
-    AChild aChild = new AChild();
+    AChild aChild=new AChild();
     // aChild.privateAChildMethod();
     // Private methods can only be accessed from the class, where they were declared
     // aChild.protectedAChildMethod();
@@ -18,8 +18,8 @@ public class BChild implements FieldAccessTester {
     aChild.publicAChildMethod();
 
 
-    AParent aParent = new AParent();
-    BParent bParent = new BParent();
+    AParent aParent=new AParent();
+    BParent bParent=new BParent();
     // System.out.println("privateFieldA is " + aParent.privateFieldA);
     // Private fields can not be accessed, because we are in different class
     // System.out.println("noModifierFieldA is " + aParent.noModifierFieldA);
@@ -33,9 +33,9 @@ public class BChild implements FieldAccessTester {
 
     // System.out.println("privateFieldB is "+bParent.privateFieldB);
     // Private fields can not be accessed, because we are in different class.
-    System.out.println("noModifierFieldB is " + bParent.noModifierFieldB);
-    System.out.println("protectedFieldB is " + bParent.protectedFieldB);
+    System.out.println("noModifierFieldB is "+bParent.noModifierFieldB);
+    System.out.println("protectedFieldB is "+bParent.protectedFieldB);
     // Protected fields CAN be accessed from the same package, from classes, which do NOT extend the class where they were declared
-    System.out.println("publicFieldB is " + bParent.publicFieldB);
+    System.out.println("publicFieldB is "+bParent.publicFieldB);
   }
 }

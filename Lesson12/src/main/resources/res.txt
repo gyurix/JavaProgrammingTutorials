@@ -1,0 +1,4 @@
+This is
+A very simple resource
+We have for the application
+To demonstrate how the Input and Output streams work
